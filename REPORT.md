@@ -713,30 +713,7 @@ To github.com:TheKamenski/lab09.git
 ❯ export PACKAGE_FILENAME=print-${PACKAGE_OS}-${PACKAGE_ARCH}.tar.gz
 ```
 ```sh
-❯ ~/go/bin/github-release info -u ${GITHUB_USERNAME} -r lab09
-tags:
-- v0.1.0.0 (commit: https://api.github.com/repos/TheKamenski/lab09/commits/2dfe485a8420e74c35c9d272ee374e3e12f6bef9)
-releases:
-- v0.1.0.0, name: 'libprint', description: 'my first release', id: 156425394, tagged: 19/05/2024 at 18:28, published: 19/05/2024 at 18:44, draft: ✗, prerelease: ✗
-  - artifact: print-Linux-x86_64.tar.gz, downloads: 0, state: uploaded, type: application/octet-stream, size: 6.0 kB, id: 168857848
-```
+
 ```sh
-❯ wget https://github.com/$\{GITHUB_USERNAME\}/lab09/releases/download/v0.1.0.0/$\{PACKAGE_FILENAME\}
-0 files              100% [=====================================================================================================>]  116.81K  941.58KB/s
-                          [Files: 0  Bytes: 116.81K [89.58KB/s] Redirects: 0  Todo: 0  Errors: 1                                 ]
-
-❯ wget https://github.com/TheKamenski/lab09/releases/download/v0.1.0.0/print-Linux-x86_64.tar.gz
-print-Linux-x86_64.t 100% [=====================================================================================================>]    5.87K    --.-KB/s
-                          [Files: 1  Bytes: 5.87K [4.40KB/s] Redirects: 1  Todo: 0  Errors: 0                                    ]
-
-❯ tar -ztf ${PACKAGE_FILENAME}
-print-0.1.0.0-Linux/bin/
-print-0.1.0.0-Linux/bin/demo
-print-0.1.0.0-Linux/lib/
-print-0.1.0.0-Linux/lib/libprint.a
-print-0.1.0.0-Linux/include/
-print-0.1.0.0-Linux/include/print.hpp
-print-0.1.0.0-Linux/cmake/
-print-0.1.0.0-Linux/cmake/print-config.cmake
-print-0.1.0.0-Linux/cmake/print-config-noconfig.cmake
+git push
 ```
